@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+
+}
+:root{
+    --size: 20px
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(135deg, #153677,#4e085f);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 2em;
+    border: black solid 1px;
+    width: 30%;
+    height: 60%;
+    min-width: 400px;
+    text-align: center;
+    background-color: white;
+    border: 0;
+}
+.clear{
+    margin: 2em;
+    align-self: flex-end;
+    font-size: 18px;
+    border: 0px;
+    text-decoration: underline;
+}
+
+button{
+    padding: 1em;
+    margin: 5px;
+    border-radius: 2em;
+    background-color: #fd5946;
+    width: 70px;
+    text-align: center;
+    font-size: 16px;
+    border: 0px;
+    
+}
+button.add{
+    border: 2px solid white;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: #fd604e;
+    border: 2.5px solid black;
+}
+button.clear{
+    padding: 0px;
+    background-color: white;
+}
+button.clear:hover{
+    background-color: white;
+    color: grey;
+    padding: 0px;
+    border:0px;
+
+}
+input{
+    padding: 1em;
+    border-radius: 2em;
+    font-size: 18px;
+    font-style: italic;
+    background-color: #edeef0;
+    border-color: white;
+    border: 0;
+}
+
+.tasks{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+
+h1{
+    margin: 1em;
+    
+}
+
+ul{
+    text-align: center;
+    list-style: none;
+    padding-top: 0.5em;
+    max-height: 250px;
+    overflow-y: auto;
+}
+li{
+    text-align: left;
+    margin: 0.5em;
+    font-size: 16px;
+}
+
+
+.circle{
+    margin-right: 0.5em;  
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 50%;
+    width: var(--size);
+    height: var(--size);
+    border: 1px solid black;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+    background-color: white;
+    display: inline-block;
+    vertical-align: middle;
+
+
+}
+
+.circle:checked{
+    background-color: #fd5946;
+    border: 0;
+}
+
+.circle:checked::after {
+  content: '✓';
+  position: absolute;
+  top: 0px;
+  left: 3px;
+  font-size: 14px;
+  color: black;
+}
+
+
+
+
+
